@@ -1,0 +1,28 @@
+###
+POST http://localhost:4000/product-api/products 
+Content-Type: application/json
+
+{
+    "productName":"book",
+    "price":50,
+    "brand":"classmate"
+}
+
+
+###
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"myth21",
+    "email":"mythili.97@gmail.com",
+    "password":"mypass124",
+    "cart":[]
+}
+
+###req to add product to cart
+PUT http://localhost:4000/user-api/user-cart/user-id/698181c40107da11618c2d64/product-id/698181af0107da11618c2d62
+
+
+####
+GET http://localhost:4000/user-api/users/698181c40107da11618c2d64
